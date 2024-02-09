@@ -251,41 +251,41 @@
   font-family: "icomoon";
 }
 
-.icon-advantages_1 .path1:before {
+.icon_advantages_1 .path1:before {
   content: "\e900";
   color: #eff9ff;
 }
-.icon-advantages_1 .path2:before {
+.icon_advantages_1 .path2:before {
   content: "\e901";
   color: #0962e8;
   margin-left: -1em;
 }
 
-.icon-advantages_2 .path1:before {
+.icon_advantages_2 .path1:before {
   content: "\e902";
   color: #eff9ff;
 }
-.icon-advantages_2 .path2:before {
+.icon_advantages_2 .path2:before {
   content: "\e903";
   color: #0962e8;
   margin-left: -1em;
 }
 
-.icon-advantages_3 .path1:before {
+.icon_advantages_3 .path1:before {
   content: "\e904";
   color: #eff9ff;
 }
-.icon-advantages_3 .path2:before {
+.icon_advantages_3 .path2:before {
   content: "\e905";
   color: #0962e8;
   margin-left: -1em;
 }
 
-.icon-advantages_4 .path1:before {
+.icon_advantages_4 .path1:before {
   content: "\e906";
   color: #eff9ff;
 }
-.icon-advantages_4 .path2:before {
+.icon_advantages_4 .path2:before {
   content: "\e907";
   color: #0962e8;
   margin-left: -1em;
