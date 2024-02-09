@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEON landging</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="global_wrapper">
+    <header class="header">
+      <div class="header_wrapper wrapper">
+        <div class="lang_toggler">
+          <ul class="lang_list">
+            <li class="lang_item lang_item_active"><a href="#">ru</a></li>
+            <li class="lang_item"><a href="#">en</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main main_wrapper">
+      <div class="main_frame_wrapper">
+        <div class="main_frame wrapper">
+          <div class="left_side">
+            <div class="logo_image_wrapper">
+              <picture class="logo_image_picture">
+                <source srcset="/img/main_frame_logo_mobile.svg" media="(max-width: 450px)">
+                <img src="/img/main_frame_logo.svg" alt="" >
+              </picture>
+            </div>
+            <p class="logo_descr">
+              Гибкая мобильная платформа для быстрой реализации инвестиционных сервисов. 
+            </p>
+            <a href="#" class="button">
+              Заказать демо
+            </a>
+          </div>
+          <div class="right_side">
+            <picture class="main_frame_picture">
+              <source srcset="/img/hand_main_mobile.webp" media="(max-width: 500px)">
+              <img src="/img/hand_main.webp" alt="" >
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="advantages wrapper">
+        <ul class="advantages_list">
+          <li class="advantages_item ">
+            <p class="advantages_text">Удобный пользовательский интерфейс</p>
+            <span class="icon_advantages icon-advantages_1 advantages_interface"><span class="path1"></span><span class="path2"></span></span>
+          </li>
+          <li class="advantages_item">
+            <p class="advantages_text">Панель администратора для ведения учета</p>
+            <span class="icon_advantages icon-advantages_2 advantages_admin"><span class="path1"></span><span class="path2"></span></span>
+          </li>
+          <li class="advantages_item">
+            <p class="advantages_text advantages_text_integration">Простая <br> и быстрая интеграция</p>
+            <span class="icon_advantages icon-advantages_3 advantages_integration"><span class="path1"></span><span class="path2"></span></span>
+          </li>
+          <li class="advantages_item">
+            <p class="advantages_text">Гибкая масштабируемая система</p>
+            <span class="icon_advantages icon-advantages_4 advantages_system"><span class="path1"></span><span class="path2"></span></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="investments wrapper">
+        <h2 class="investments_title">
+          Наши <span class="investments_title_blue">ключевые продукты</span> <br> для инвестиций
+        </h2>
+        <div class="investments_cards">
+          <div class="investments_card">
+            <div class="investments_left">
+              <bold class="investments_card_title">Платформа для автоследования</bold>
+              <p class="investments_card_text">Копирование стратегий в автономном режиме</p>
+            </div>
+            <div class="investments_right">
+              <picture>
+                <!-- <source srcset="320.jpg" media="(max-width: 800px)"> -->
+                <img src="/img/investments_1.png" alt="" class="investments_card_picture" >
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>
