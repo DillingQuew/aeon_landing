@@ -49,6 +49,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 10;
 }
 
 .lang_list {
@@ -172,6 +173,7 @@
   right: 0;
   z-index: 3;
   margin-bottom: 35px;
+  height: 0;
   /* padding: 0; */
 }
 
@@ -327,7 +329,11 @@
 }
 
 .investments_cards {
-  margin-top: 44px;
+  margin-top: 43px;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  gap: 20px;
 }
 .investments_card {
   border-radius: 30px;
@@ -338,6 +344,7 @@
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
+  position: relative;
 }
 
 .investments_card_title {
@@ -348,13 +355,41 @@
   letter-spacing: 0%;
   max-width: 201px;
   width: 100%;
-  padding-bottom: 7px;
+  padding-bottom: 12px;
   padding-top: 37px;
+}
+
+.investments_card_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142%;
+  letter-spacing: 0%;
+}
+
+.investments_right {
+  max-width: 250px;
+  position: relative;
+  right: -22px;
+  top: 13px;
 }
 
 .investments_card_picture {
   max-width: 100%;
   height: auto;
+}
+
+.investments_card_robo .investments_left {
+  margin-left: 10px;
+}
+.investments_card_robo .investments_card_title {
+  padding-bottom: 7px;
+}
+.investments_card_robo .investments_right {
+  right: -24px;
+}
+
+.investments_card_robo .investments_card_text {
+  margin-left: 1px;
 }
 
 @media screen and (max-width: 860px) {
@@ -391,7 +426,18 @@
   .advantages_item {
     flex-grow: 1;
   }
+  .investments_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .investments_title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -3%;
+  }
 }
+
 
 @media screen and (max-width: 529px) { 
   .logo_descr {
@@ -448,5 +494,61 @@
   }
   .logo_image_wrapper {
     margin-left: 0;
+  }
+
+  .investments_cards {
+    margin-top: 24px;
+    gap: 16px;
+  }
+  
+  .investments_card {
+    padding-left: 16px;
+    padding-right: 0;
+    height: 215px;
+  }
+
+  .investments_left {
+    max-width: 160px;
+  }
+
+  .investments_card_title {
+    font-size: 16px;
+    padding-top: 25px;
+    padding-bottom: 3px;
+  }
+  .investments_right {
+    position: absolute;
+    right: 21px;
+    top: 0px;
+    max-width: unset;
+  }
+  .investments_card_picture {
+    width: 174px;
+    max-width: unset;
+    position: relative;
+    right: -26px;
+    top: 1px;
+  }
+  .investments_card_text {
+    font-size: 13px;
+  }
+
+  .investments {
+    margin-top: 40px;
+  }
+
+  .investments_card_robo .investments_right {
+    right: 0;
+    bottom: 0;
+  }
+  .investments_card_robo .investments_left {
+    margin-left: 0;
+    max-width: 150px;
+  }
+  .investments_card_robo .investments_card_picture {
+    right: -4px;
+  }
+  .investments_card_robo .investments_card_title {
+    padding-bottom: 3px;
   }
 }
